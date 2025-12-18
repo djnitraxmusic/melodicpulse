@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Melodic Pulse</title>
 
-    <!-- Auto-Redirect nach 5 Sekunden -->
-    <meta http-equiv="refresh" content="5;url=https://district-mares.de/tickets">
+    <!-- Auto-Redirect nach 7 Sekunden -->
+    <meta http-equiv="refresh" content="7;url=https://district-mares.de/tickets">
 
     <style>
         :root {
             --neon-blue: #4fc3ff;
             --dark-blue: #020b1a;
-            --glow: 0 0 20px rgba(79,195,255,0.6);
+            --glow: 0 0 18px rgba(79,195,255,0.55);
         }
 
         * {
@@ -39,7 +39,7 @@
         }
 
         h1 {
-            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-size: clamp(2.6rem, 6vw, 4.6rem);
             letter-spacing: 4px;
             color: var(--neon-blue);
             text-shadow: var(--glow);
@@ -49,40 +49,38 @@
         p {
             font-size: 1.1rem;
             line-height: 1.6;
-            margin-bottom: 25px;
+            margin-bottom: 22px;
             opacity: 0.9;
         }
 
         .hint {
-            font-size: 0.95rem;
-            opacity: 0.7;
+            font-size: 0.9rem;
+            opacity: 0.65;
             margin-top: 10px;
         }
 
-        .impressum-btn {
-            margin-top: 40px;
-            padding: 12px 28px;
-            font-size: 1rem;
+        .impressum {
+            margin-top: 90px;
+            font-size: 0.8rem;
+            opacity: 0.55;
+        }
+
+        .impressum a {
             color: var(--neon-blue);
-            background: transparent;
-            border: 2px solid var(--neon-blue);
-            border-radius: 30px;
-            cursor: pointer;
             text-decoration: none;
-            box-shadow: var(--glow);
+            border-bottom: 1px solid transparent;
             transition: all 0.3s ease;
         }
 
-        .impressum-btn:hover {
-            background: var(--neon-blue);
-            color: #020b1a;
-            box-shadow: 0 0 30px rgba(79,195,255,0.9);
+        .impressum a:hover {
+            opacity: 1;
+            border-bottom: 1px solid var(--neon-blue);
         }
 
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(10px);
+                transform: translateY(12px);
             }
             to {
                 opacity: 1;
@@ -92,10 +90,10 @@
     </style>
 
     <script>
-        // Fallback-Redirect über JavaScript
+        // JavaScript-Fallback-Redirect (7 Sekunden)
         setTimeout(() => {
-            window.location.href = "https://bollwerk107.reservix.de/tickets-district-moers-vol-2-in-moers-bollwerk-107-am-20-3-2026/e2502718";
-        }, 5000);
+            window.location.href = "https://district-mares.de/tickets";
+        }, 7000);
     </script>
 </head>
 
@@ -104,20 +102,22 @@
         <h1>MELODIC PULSE</h1>
 
         <p>
-            Melodic Pulse hostet am <strong>20.03.26</strong> den <strong>2. Floor</strong>
-            beim <strong>District Moers Rave</strong> im <strong>Bollwerk </strong>.
+            Melodic Pulse hostet am <strong>20.03.</strong> den <strong>2. Floor</strong>
+            bei der <strong>District Moers Party</strong> im <strong>Bollwerk</strong>.
         </p>
 
         <p>
-            Du wirst weitergeleitet zum Ticket Shop von Bollwerk 107 Moers<br>
-            Der Kauf eines District Mares Tickets ermöglicht dir auch den Zugang zu unserem Floor.
+            Du wirst weitergeleitet zum Ticket Shop vom Bollwerk 107 Moers <br>
+            Der Kauf eines District Moers Tickets ermöglicht dir auch den Zugang zu unserem Floor.
         </p>
 
         <div class="hint">
-            Weiterleitung erfolgt automatisch in 5 Sekunden …
+            Automatische Weiterleitung in 7 Sekunden …
         </div>
 
-        <a href="https://djnitraxmusic.github.io/impressum/index.html" class="impressum-btn">Impressum</a>
+        <div class="impressum">
+            <a href="https://djnitraxmusic.github.io/impressum/index.html">Impressum</a>
+        </div>
     </div>
 </body>
 </html>
