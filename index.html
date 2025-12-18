@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melodic Pulse</title>
+
+    <!-- Auto-Redirect nach 5 Sekunden -->
+    <meta http-equiv="refresh" content="5;url=https://district-mares.de/tickets">
+
+    <style>
+        :root {
+            --neon-blue: #4fc3ff;
+            --dark-blue: #020b1a;
+            --glow: 0 0 20px rgba(79,195,255,0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at top, #081b3a, var(--dark-blue));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            letter-spacing: 4px;
+            color: var(--neon-blue);
+            text-shadow: var(--glow);
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        .hint {
+            font-size: 0.95rem;
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+
+        .impressum-btn {
+            margin-top: 40px;
+            padding: 12px 28px;
+            font-size: 1rem;
+            color: var(--neon-blue);
+            background: transparent;
+            border: 2px solid var(--neon-blue);
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: var(--glow);
+            transition: all 0.3s ease;
+        }
+
+        .impressum-btn:hover {
+            background: var(--neon-blue);
+            color: #020b1a;
+            box-shadow: 0 0 30px rgba(79,195,255,0.9);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <script>
+        // Fallback-Redirect über JavaScript
+        setTimeout(() => {
+            window.location.href = "https://bollwerk107.reservix.de/tickets-district-moers-vol-2-in-moers-bollwerk-107-am-20-3-2026/e2502718";
+        }, 5000);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>MELODIC PULSE</h1>
+
+        <p>
+            Melodic Pulse hostet am <strong>20.03.26</strong> den <strong>2. Floor</strong>
+            beim <strong>District Moers Rave</strong> im <strong>Bollwerk </strong>.
+        </p>
+
+        <p>
+            Du wirst weitergeleitet zum Ticket Shop von Bollwerk 107 Moers<br>
+            Der Kauf eines District Mares Tickets ermöglicht dir auch den Zugang zu unserem Floor.
+        </p>
+
+        <div class="hint">
+            Weiterleitung erfolgt automatisch in 5 Sekunden …
+        </div>
+
+        <a href="https://djnitraxmusic.github.io/impressum/index.html" class="impressum-btn">Impressum</a>
+    </div>
+</body>
+</html>
